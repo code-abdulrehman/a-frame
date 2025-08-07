@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a-frame</title>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+</head>
+
+<body style="background-color: #000;">
+
+    <a-scene>
+       
+        <a-assets>
+            <a-asset-item id="crate-obj" src="./couch/couch.obj"></a-asset-item>
+            <a-asset-item id="crate-mtl" src="./couch/couch.mtl"></a-asset-item>
+          </a-assets>
+        
+          <!-- Using the asset management system. -->
+          <a-obj-model src="#crate-obj" mtl="#crate-mtl"></a-obj-model>
+        
+          <!-- Defining the URL inline. Not recommended but may be more comfortable. -->
+          <a-obj-model src="crate.obj" mtl="crate.mtl"></a-obj-model>
+        <a-sky color="teal"></a-sky>
+
+    </a-scene>
+
+</body>
+
+</html>

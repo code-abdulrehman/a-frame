@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a-frame</title>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+</head>
+<body style="background-color: #000;">
+
+    <!-- shapes -->
+    <a-scene>
+       <a-box 
+       color="green"
+       height="1"
+       width="1"
+       depth="0.4"
+       position="0 0 0"
+       ></a-box>
+
+       <a-cylinder
+       color="red"
+       height="3"
+       segments="5"
+       open-ended="false"
+       position="0 2 12"
+       side="double"
+       ></a-cylinder>
+
+       <a-sphere
+       color="blue"
+       radius="1"
+       position="0 2 12"
+       ></a-sphere>
+
+       <a-torus-knot color="yellow" radius="3" radius-tubular="0.5" position="0 0 -7" rotation="0 0 0"></a-torus-knot>
+
+
+       <a-dodecahedron color="#FF926B" height="1" width="1" depth="1" position="0 0 -7"></a-dodecahedron>
+
+    </a-scene>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a-frame</title>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+</head>
+
+<body style="background-color: #000;">
+    <!-- Scale, Relative Scale, And Reflection -->
+    <!-- shapes -->
+    <a-scene>
+        <!-- box | 2:1 ratio -->
+        <a-box color="blue" height="2" width="4" depth="0.2" position="0 2 -7" rotation="90 0 0">
+            <!-- children -->
+            <a-circle color="tomato" position="2 0 0" side="double" rotation="90 0 0" ></a-circle>
+        </a-box>
+
+        <a-circle color="orange" position="-2 2 -7" scale="2 1 1"></a-circle>
+
+        <a-cylinder color="gray" height="3" segments-radial="8" open-ended="true" position="0 5 -7"
+            rotation="-20 4 -10" side="double"></a-cylinder>
+
+        <a-sky color="teal"></a-sky>
+
+    </a-scene>
+
+</body>
+
+</html>
